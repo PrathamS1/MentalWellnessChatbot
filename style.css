@@ -1,0 +1,427 @@
+body{
+    margin: 0;
+
+}
+.first-section{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    width: 100%;
+    height: 715px;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    padding: 4px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.icon img{
+    height: 50px;
+    width: 50px;
+    margin-right: 48em;
+    border-radius: 50%;
+}
+.nav-right a{
+    text-decoration: none;
+    color: #05c19c;
+    margin-right: 40px;
+    font-size: larger;
+    color: #2b2525;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+  
+.nav-right a:focus,
+.nav-right a:hover {
+    color: #fff;
+}
+  
+.nav-right a:focus:after,
+.nav-right a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+  
+.nav-right a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+.nav-right a.active {
+    font-weight: bold;
+}
+
+.content{
+    margin-top: 15%;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6em;
+    color: aliceblue;
+    text-shadow: 2px 2px 8px black;
+}
+.quote{
+    margin: -60px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: italic;
+    opacity: 0.7;
+}
+.talk{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.clickme{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.clickme button{
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+}
+
+.clickme button{
+    width: fit-content;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.clickme button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.clickme button:active {
+    opacity: 0.5;
+}
+
+.card-container {
+    background-color: #fbfbfb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px;
+}
+.card {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    background-color: aquamarine;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background-color:#2af598;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-back p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10%;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+.chatbot-area{
+    height: 600px;
+    padding-bottom: 70px;
+}
+.chat{
+    position: relative;
+    top: 10%;
+    left: 35%;
+    border: 5px solid;
+    width: fit-content;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 8px 8px 10px black;
+    padding-bottom: 15px;
+}
+.chatbot-area h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+}
+.chatbox {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 20px 0;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.user-message {
+    color: rgb(11, 11, 12);
+    width: auto;
+    font-size: 20px;
+    border-radius: 0.25em;
+    background-color: #bcc6c2;
+    box-shadow: 2px 2px 8px rgb(119, 116, 116);
+    padding: 15px;
+    width: fit-content;
+}
+
+.bot-message {
+    color: rgb(4, 16, 21);
+    font-size: 20px;
+    border-radius: 0.25em;
+    background-color: #00ff99;
+    box-shadow: 2px 2px 8px rgb(119, 116, 116);
+    padding: 15px;
+    width: fit-content;
+}
+.input-box {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.input-box input{
+    margin: 5px;
+    font-size: larger;
+    border-radius: 0.5em;
+}
+button {
+    font-family: inherit;
+    float: right;
+    font-size: 15px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-right: 20px;
+}
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+}
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+from {
+    transform: translateY(0.1em);
+}
+
+to {
+    transform: translateY(-0.1em);
+}
+}  
+
+.third-section{
+    height: 600px;
+}
+.third-head{
+    text-align: left;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.component {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:100px;
+}
+
+.headings {
+    width: 30%;
+}
+
+.heading {
+    cursor: pointer;
+    margin-bottom: 45px;
+    color: #000000;
+    transition: color 0.3s;
+    width: max-content;
+}
+
+.heading:hover {
+    color: #ffffff;
+    background-color: rgb(14, 213, 177);
+    transform: scale(1.5,1.5);
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgb(15, 195, 168) 0px 7px 29px 0px;
+}
+
+.description {
+    width: 70%;
+    height: 200px;
+}
+
+.description-text {
+    display: none;
+    position: relative;
+    top: -35%;
+    font-size: 2em;
+    text-align: justify;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 10px 10px 20px rgb(208, 201, 201);
+}
+
+.fade-in {
+    animation: fade-in 0.9s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
