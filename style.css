@@ -19,10 +19,13 @@ body{
     margin-top: 10px;
 }
 .icon img{
-    height: 50px;
-    width: 50px;
+    height:50px;
+    width: 180px;
     margin-right: 48em;
-    border-radius: 50%;
+}
+.nav-left:hover{
+    cursor: pointer;
+    transform: translateY(3px);
 }
 .nav-right a{
     text-decoration: none;
@@ -128,7 +131,15 @@ body{
 .clickme button:active {
     opacity: 0.5;
 }
-
+.second-heading{
+    margin-top: 60px;
+}
+.second-heading h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+}
 .card-container {
     background-color: #fbfbfb;
     display: flex;
@@ -233,7 +244,10 @@ body{
     color: #fff;
     text-decoration: none;
 }
-
+.footer-links a:hover{
+    cursor: pointer;
+    color: rgb(0, 255, 247);
+}
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
@@ -242,6 +256,15 @@ body{
 .footer-bottom p {
     margin: 0;
     font-size: 14px;
+}
+.botImage{
+    position: absolute;
+}
+.botImage img{
+    height: 200px;
+    width: 200px;
+    margin-top: 250px;
+    margin-left: 150px;
 }
 .chatbot-area{
     height: 600px;
@@ -265,7 +288,7 @@ body{
 
 }
 .chatbox {
-    width: 400px;
+    width: 450px;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 20px 0 20px 0;
@@ -360,6 +383,8 @@ to {
 
 .third-section{
     height: 600px;
+    box-shadow: 5px 0 5px rgb(6, 143, 120);
+    padding-top: 10px;
 }
 .third-head{
     text-align: left;
@@ -412,7 +437,35 @@ to {
     background-color: rgb(255, 254, 254);
     box-shadow: 10px 10px 20px rgb(208, 201, 201);
 }
+.forth-section{
+    border-top: 5px dashed rgb(47, 255, 186);
+    border-bottom: 5px dashed rgb(47, 255, 186);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.aboutus{
+    background-color: bisque;
+}
+.aboutus h1{
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    margin-top: 25%;
+    text-shadow: 5px 4px 8px rgb(14, 181, 147);
+    font-weight: 500px;
+    letter-spacing: 8px;
+    
+}
+.about-detail{
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
 
+}
 .fade-in {
     animation: fade-in 0.9s;
 }
