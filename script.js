@@ -1,21 +1,16 @@
 function showDescription(id) {
-    var descriptions = document.getElementsByClassName("description-text");
+    var cards = document.getElementsByClassName("card");
 
-    // Hide all descriptions
-    for (var i = 0; i < descriptions.length; i++) {
-        descriptions[i].style.display = "none";
+    // Hide all cards
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("show");
     }
 
-    // Show the selected description with fade animation
-    var selectedDescription = document.getElementById("description" + id);
-    selectedDescription.style.display = "block";
-    selectedDescription.classList.add("fade-in");
-
-    // Remove fade animation after it completes
-    setTimeout(function() {
-        selectedDescription.classList.remove("fade-in");
-    }, 900);
+    // Show the selected card
+    var selectedCard = document.getElementById("description" + id);
+    selectedCard.classList.add("show");
 }
+
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
